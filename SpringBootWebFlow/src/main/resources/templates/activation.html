@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Activation Page</title>
+<script type="text/javascript" src="/resources/dojo/dojo.js" /></script>
+</head>
+<body>
+    <h2>Click to activate account</h2>
+    
+    
+    
+    <a th:href="@{'~' + ${flowExecutionUrl} + '&_eventId_cancel'}" class="btn btn-danger">Cancel</a>
+    
+ 
+    <form method="post">
+        <input type="submit" name="_eventId_activate" value="activate" />
+        <input type="submit" name="_eventId_cancel" value="cancel" />
+    </form>
+</body>
+</html>
